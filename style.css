@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #000;
+    background: linear-gradient(123deg, #21d120, #a4acee, #0c36db, #2bb555, #c3e876, #747a52);
+    background-size: 240% 240%;
+    animation: gradient-animation 20s ease infinite;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.stopWatch {
+    background: #fff;
+    padding: 60px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Orbitron", sans-serif;
+}
+.stopWatch h1 {
+    font-size: 5rem;
+    line-height: 6rem;
+    margin-bottom: 30px;
+}
+.stopWatch .displayTime {
+    font-size: 4rem;
+    line-height: 5rem;
+    margin-bottom: 40px;
+}
+.stopWatch button {
+    background: #000;
+    border: 1px solid #000;
+    padding: 10px 40px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 3rem;
+    cursor: pointer;
+}
+.stopWatch button:not(:last-child) {
+    margin-right: 10px;
+}
+.stopWatch h3 {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    margin-bottom: 30px;
+    transition: 0.5s ease-in-out !important;
+}
+
+
+@media screen and (max-width: 767px) {
+    .stopWatch {
+        padding: 40px 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .stopWatch h1 {
+        font-size: 3.5rem;
+        line-height: 5rem;
+        margin-bottom: 20px;
+    }
+    .stopWatch h3 {
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    .stopWatch img {
+        width: 70%;
+    }
+    .stopWatch button {
+        width: 100%;
+        font-size: 1.8rem;
+        padding: 8px 25px;
+    }
+    .stopWatch button:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .stopWatch .displayTime {
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-bottom: 20px;
+    }
+}
